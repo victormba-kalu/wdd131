@@ -11,7 +11,7 @@
 }
 body {
     display: grid;
-    grid-template: auto 1fr auto / 1fr 300px;
+    grid-template: auto 1fr auto / 1fr 330px;
 }
 
 header {
@@ -19,8 +19,11 @@ header {
     color: var(--accent2-color);
     background-color: var(--primary-color);
     font-size: smaller;
-   
-    
+
+}
+
+.header-content{
+    padding: 2rem;
 }
 nav a {
     text-decoration: none;
@@ -39,6 +42,7 @@ nav ul {
 .navigation {
     background-color: var(--secondary-color);
     margin-bottom: 0;
+    padding: 0.5rem;
 }
 
 
@@ -47,7 +51,9 @@ main {
     background-color: var(--accent1-color);
     padding: 1rem;
     font-size: 1.2rem;
-    text-align: justify
+    text-align: justify;
+    padding: 1rem;
+    line-height: 2rem;
 }
 
 aside {
@@ -56,6 +62,8 @@ aside {
     padding: 1rem;
     font-size: 1.1rem;
     text-align: justify;
+    padding: 1rem;
+    line-height: 2rem;
     
 }
 
@@ -66,4 +74,5 @@ footer {
     font-weight: bold;
     color: var(--accent2-color);
     background-color: var(--primary-color);
+    padding: 2rem;
 }
