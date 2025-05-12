@@ -48,17 +48,17 @@ nav ul {
 
 main {
     grid-column: 1 / 2;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 1rem;
     font-size: 1.2rem;
     text-align: justify;
     padding: 1rem;
     line-height: 2rem;
+    
 }
 
 aside {
     grid-column: 2 / 3;
-    background-color: var(--accent2-color);
     padding: 1rem;
     font-size: 1.1rem;
     text-align: justify;
