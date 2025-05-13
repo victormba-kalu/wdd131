@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
 }
 
 .header-content {
@@ -57,7 +57,7 @@ nav a {
     display: block;
     color: var(--accent2-color);
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -147,7 +147,7 @@ figure img {
 }
 
 figcaption {
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     font-weight: 350;
     font-size: 0.8rem;
     line-height: 0.5rem;
