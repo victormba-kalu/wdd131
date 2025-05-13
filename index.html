@@ -11,6 +11,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
         <title>WDD - Dynamic Web Fundamentals - Victor Mba</title>
     </head>
     <body>
@@ -67,7 +68,8 @@
             </section>
         </main>
         <footer>
-            <p>&copy; 2025 &#127796; Basic Layout | Victor Mba &#127796; Rivers, Nigeria</p>
+            <p>&copy; <span id="currentyear"></span> &#127796; Basic Layout | Victor Mba &#127796; Rivers, Nigeria</p>
+            <p class="modified-last">Last Modification: <span id="lastmodified"></span></p>
         </footer>
     </body>
 </html>

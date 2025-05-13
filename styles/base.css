@@ -177,3 +177,11 @@ footer {
     font-weight: 500;
     font-family: "Merriweather", sans-serif;
 }
+
+.modified-last {
+    font-family: "Merriweather", sans-serif;
+    color: greenyellow;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
