@@ -10,7 +10,9 @@
     --accent1-color: #276FBF;
     --accent2-color: #FAF8F7;
 }
-
+body {
+    padding: 8px;
+}
 h2 {
     font-family: "Roboto", sans-serif;
 }
@@ -32,60 +34,90 @@ p {
 .my-name {
     color: greenyellow;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .navigation {
     background-color: var(--primary-color);
     padding: 0.8rem;
-
 }
 nav ul{
-    display: flex;    
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-around;    
+    
 }
 
 nav ul li{
     list-style: none;
+   
 }
 
 nav a {
     text-decoration: none;
+    display: block;
     color: var(--accent2-color);
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: greenyellow;
+    background-color: var(--secondary-color);
+    padding: 0 3px;
+    border-radius: 3px;
+    transform: translateY(-3px)
+
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 450px;
+    justify-content: center;
+    max-width: 90%;
+    margin: 5px auto;
+    
 }
 
-main section {
-    border-radius: 5px;
-}
 
 .card h3 {
     text-align: center;
     font-weight: bold;
     color: var(--accent2-color);
     background-color: var(--secondary-color);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     padding: 10px;
+   
 }
 
 .card {
-    margin: 10px;
+    margin: 5px;
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     color: var(--secondary-color);
     font-family: "Roboto", sans-serif;
-    font-weight: 450;
+    font-weight: 550;
     line-height: 1.5rem;
+    border-radius: 7px;
 }
 .card p {
-    padding: 10px;
+    padding: 15px;
+}
+.profile-image {
+    float: right;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 30px gray;
+    margin: 10px;
 }
 
+.my-country {
+    display: block;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    
+    border: 1px solid var(--primary-color);
+}
 footer {
     text-align: center;
 }
