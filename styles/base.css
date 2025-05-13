@@ -22,7 +22,7 @@ p {
 }
 
 .header-content {
-    font-family: "Merriweather", serif;
+    font-family: "Roboto", serif;
     background-color: var(--secondary-color);
     padding: 2rem;
     text-align: center;
