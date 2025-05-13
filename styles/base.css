@@ -64,9 +64,9 @@ nav a {
 nav a:hover {
     color: greenyellow;
     background-color: var(--secondary-color);
-    padding: 0 3px;
+    padding: 0 1.5px;
     border-radius: 3px;
-    transform: translateY(-3px)
+    transform: translateY(-1.5px)
 
 }
 
@@ -104,20 +104,76 @@ main {
     padding: 15px;
 }
 .profile-image {
-    float: right;
     border: 1px solid var(--primary-color);
     box-shadow: 0 0 30px gray;
     margin: 10px;
+    grid-column: 2 / 3;
 }
 
+.about-me {
+    display: grid;
+}
+.about-me-column {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.my-country-grid {
+    display: grid;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+    max-width: 180px;
+    margin: auto;
+    grid-column: 1 / 2;
+
+}
+.my-country-grid p {
+    grid-column: 2 / 3;
+}
+figure img {
+    width: 170px;
+}
+
+figcaption {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 350;
+    font-size: 0.8rem;
+    line-height: 0.5rem;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    
+}
 .my-country {
     display: block;
     font-weight: bold;
     color: var(--primary-color);
     font-size: 1.2rem;
-    
-    border: 1px solid var(--primary-color);
+    text-align: center;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
 }
+
+.coat-of-arms {
+    
+    margin: 5px;
+    
+}
+
+section article {
+    float: left;
+}
+
 footer {
     text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    font-weight: 500;
+    font-family: "Merriweather", sans-serif;
 }
