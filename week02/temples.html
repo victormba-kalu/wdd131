@@ -3,16 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temple Album</title>
     <meta name="description" content="A simple HTML document">
     <meta name="author" content="Victor Mba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <p>Temple Album</p>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Old</a></li>
+                <li><a href="about.html">New</a></li>
+                <li><a href="contact.html">Large</a></li>
+                <li><a href="faq.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="temple-image">
+            <figure>
+                <img src="images/10-Billings-Montana-Temple-1566343.jpg" alt="Billings Montana Temple">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/adelaide-australia-temple-lds-856093-wallpaper.jpg" alt="Adelaide Australia Temple">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque-temple-lds-137883-wallpaper.jpg" alt="Albuquerque Temple">
+                <figcaption>Albuquerque Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/anchorage-temple-lds-746769-wallpaper.jpg" alt="Anchorage Temple">
+                <figcaption>Anchorage Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/apia-samoa-temple-lds-495972-wallpaper.jpg" alt="Apia Samoa Temple">
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Baton_Rouge_Louisiana_.jpeg" alt="Baton Rouge Louisiana Temple">
+                <figcaption>Baton Rouge Louisiana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/belem_brazil_temple_exterior.jpg" alt="Belem Brazil Temple">
+                <figcaption>Belem Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bern-switzerland-temple-lds-784288-wallpaper.jpg" alt="Bern Switzerland Temple">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/boise-idaho-temple-exterior-2012-1029114-wallpaper.jpg" alt="Boise Idaho Temple">
+                <figcaption>Boise Idaho Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127796; Temple Album | Victor Mba &#127796; Rivers, Nigeria</p>
+        <p class="modified-last">Last Modification: <span id="lastmodified"></span></p>
+    </footer>
     
 </body>
 </html>
