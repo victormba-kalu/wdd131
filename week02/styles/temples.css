@@ -9,6 +9,11 @@
     --accent1-color: #276FBF;
     --accent2-color: #FAF8F7;
 }
+header, footer {
+    width: 100%;
+    display: block;
+}
+
 header p {
     display: inline;
     font-size: 1.5rem;
@@ -25,18 +30,48 @@ header {
    
 }
 
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
 
 .navigation {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    
+    margin: 0 auto;
+    max-width: 760px; 
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation li {
-    margin: 0 2rem;
-    
+    display: none;
 }
+
+.show li {
+    display: block;
+}
+
 
 
 nav a {
@@ -58,7 +93,9 @@ nav a:hover {
 
 main {
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 1rem;
 }
 main img {
     width: 300px;
@@ -69,7 +106,7 @@ figure {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
     background-color: var(--accent1-color);
     border-radius: 10px;
@@ -93,6 +130,7 @@ h1 {
 .temple-image {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
 }
 footer {
     text-align: center;
