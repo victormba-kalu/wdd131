@@ -99,8 +99,9 @@ main {
     padding: 1rem;
 }
 main img {
-    width: 300px;
-    height: 150px;
+    width: 270px;
+    height: 130px;
+    border: 2px solid var(--primary-color);
 }
 figure {
     display: flex;
@@ -112,7 +113,7 @@ figure {
     background-color: var(--accent1-color);
     border-radius: 10px;
     padding: 1rem;
-    width: 320px;
+    width: 310px;
     height: auto;
 }
 figcaption {
