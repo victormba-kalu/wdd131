@@ -138,5 +138,5 @@ footer {
     padding: 1rem;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    font-family: "Merriweather", sans-serif;
+    font-family: sans-serif, Georgia;
 }
