@@ -32,7 +32,6 @@
             display: none;
         }
     .temple-image {
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr;   }
 
 
