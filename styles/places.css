@@ -9,7 +9,9 @@
      --secondary-color: #FF0000;
      --accent1-color: #0000FF;
  }
-
+html {
+    height: 100%;
+}
  h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -18,7 +20,12 @@
  body {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
  }
+
+main {
+    overflow-y: auto;
+}
 
 section {
     margin: 0 auto;
