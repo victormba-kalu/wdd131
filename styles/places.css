@@ -27,6 +27,7 @@ html {
 
 main {
     overflow-y: auto;
+    background-color: var(--secondary-color);
 }
 
 
@@ -35,7 +36,9 @@ section {
     border: 1px solid var(--accent1-color);
     text-align: center;
     font-size: 1.2em;
-    font-family: sans-serif
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    padding-top: var(--gap);
 }
 img {
     width: 100vw;
@@ -43,6 +46,8 @@ img {
     height: auto;
     display: block;
     object-fit: cover;
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
 }
 
 dl {

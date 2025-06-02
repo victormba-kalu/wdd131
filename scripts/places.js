@@ -17,7 +17,7 @@ console.log(`Temperature: ${tempF} °F, Wind Speed: ${windSpeedMph} mph`);
 
 if (tempF <= 50 && windSpeedMph > 3) {
     const windChill = calculateWindChill(tempF, windSpeedMph);
-    document.getElementById("windchill").textContent = `${windChill.toFixed(1)} °F`;
+    document.getElementById("windchill").textContent = `${windChill.toFixed(1)}°F`;
     
 
 }else {
