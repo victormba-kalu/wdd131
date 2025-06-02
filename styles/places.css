@@ -14,18 +14,17 @@ html {
     height: 100%;    
 }
 
- h1 {
-    
+ h1 {   
     font-weight: 700;
-;
  }
+
  body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    overflow: hidden;
+    max-height: 100vh;
     font-family: "Roboto", sans-serif;
- }
+}
+
 main {
     overflow-y: auto;
 }
