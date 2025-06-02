@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
     <script src="scripts/places.js" defer></script>
 
 </head>
@@ -20,63 +21,64 @@
 
     </header>
     <main>
-        <picture>
-            <source srcset="images/testh.webp" media="(min-width: 1000px)">
-            <source srcset="images/hero-medium" media="(min-width: 550px)">
-            <img src="images/hero-small.webp" alt="The American Quarter Horse of Texas" width="600" height="400">
-            
-        </picture>
-
-        <section class="data-container">
-            <h2>Data</h2>
-            <dl>
-                <dt>Area: </dt>
-                <dd>696,241sq km</dd>
-
-                <dt>Population: </dt>
-                <dd>31,290,831</dd>
-
-                <dt>Capital: </dt>
-                <dd>Austin</dd>
-
-                <dt>Languages: </dt>
-                <dd>English, Spanish</dd>
-
-                <dt>Currency: </dt>
-                <dd>United States Dollar</dd>
-
-                <dt>Time Zone: </dt>
-                <dd>GMT-5 (CST)</dd>
-
-                <dt>Calling Code: </dt>
-                <dd>+1 214</dd>
-
-                <dt>Internet TLD: </dt>
-                <dd>.us</dd>
-            </dl>
-        </section>
-
-
-        <section class="data-container">
-            <h2>Weather</h2>
-            🌤️
-            <dl>
-                <dt>Temperature: </dt>
-                <dd id="tempF">50&degF</dd>
-        
-                <dt>Conditions: </dt>
-                <dd>Clear skys</dd>
-        
-                <dt>Wind: </dt>
-                <dd id="windspeed">3.1mph</dd>
-        
-                <dt>Windchill: </dt>
-                <dd id="windchill"></dd>
-        
+        <div class="image-container">
+            <picture>
+                <source srcset="images/testh.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="The American Quarter Horse of Texas" width="600" height="400">
                 
-            </dl>
-        </section>
+            </picture>
 
+            <section class="data-container data-overlay">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area: </dt>
+                    <dd>696,241sq km</dd>
+
+                    <dt>Population: </dt>
+                    <dd>31,290,831</dd>
+
+                    <dt>Capital: </dt>
+                    <dd>Austin</dd>
+
+                    <dt>Languages: </dt>
+                    <dd>English, Spanish</dd>
+
+                    <dt>Currency: </dt>
+                    <dd>USD</dd>
+
+                    <dt>Time Zone: </dt>
+                    <dd>GMT-5 (CST)</dd>
+
+                    <dt>Calling Code: </dt>
+                    <dd>+1 214</dd>
+
+                    <dt>Internet TLD: </dt>
+                    <dd>.us</dd>
+                </dl>
+            </section>
+
+
+            <section class="data-container weather-overlay">
+                <h2>Weather</h2>
+                🌤️
+                <dl>
+                    <dt>Temperature: </dt>
+                    <dd id="tempF">50&degF</dd>
+            
+                    <dt>Conditions: </dt>
+                    <dd>Clear skys</dd>
+            
+                    <dt>Wind: </dt>
+                    <dd id="windspeed">3.1mph</dd>
+            
+                    <dt>Windchill: </dt>
+                    <dd id="windchill"></dd>
+            
+                    
+                </dl>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> &#127796; Temple Album | Victor Mba &#127796; Texas, United States</p>

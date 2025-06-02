@@ -1,0 +1,48 @@
+@media screen and (min-width: 500px) {
+   .image-container {
+       position: relative;
+       width: 100%;
+
+   }
+   .image-container h2 {
+        background-color: var(--secondary-color);
+        width: 70%;
+        color: var(--primary-color);
+        font-size: 2em;
+        padding: 0.2em;
+        position: absolute;
+        left: -5px;
+        top: 5px;
+        
+        
+   }
+   .data-overlay, .weather-overlay {
+        position: absolute;
+        z-index: 10;
+        font-size: 0.8em;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: var(--accent1-color);
+      
+   }
+    .data-overlay {
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: auto;
+        margin-left: var(--gap);
+        margin-top: var(--gap);
+        padding-top: 3em;
+    }
+
+
+   .weather-overlay {
+        bottom: 0;
+        right: 0;
+        width: 20%;
+        height: auto;
+        margin-right: var(--gap);
+        margin-bottom: var(--gap);
+   }
+    
+    
+}
