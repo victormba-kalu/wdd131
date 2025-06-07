@@ -1,0 +1,29 @@
+
+main {
+    margin: 0 auto;
+    width: 400px;
+}
+
+img {
+    display: block;
+    animation: fade-from-black 15s;
+    margin-bottom: 3em;
+}
+
+@keyframes fade-from-black {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+p, h1 {
+    text-align: center;
+}
+
