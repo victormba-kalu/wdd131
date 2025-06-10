@@ -127,6 +127,8 @@ main {
 .temple-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent2-color);
     padding: 1rem;
     border-radius: 5px;
