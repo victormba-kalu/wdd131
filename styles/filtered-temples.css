@@ -110,16 +110,23 @@ nav a:hover {
     border-radius: 3px;
     transform: translateY(-0.5px);
 }
+body {
+    max-height: 100vh;
+}
 
 main {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 100000px;
     width: 100%;
     padding: 1rem;
+    overflow-y: auto;
+    
 }
+
 .temple-card img {
-    width: 270px;
-    height: 130px;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
     border: none;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
 }
@@ -127,7 +134,7 @@ main {
 .temple-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--accent2-color);
     padding: 1rem;
@@ -144,6 +151,9 @@ main {
     line-height: 1.2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
@@ -157,12 +167,14 @@ main {
 .temple-card h3 {
     font-family: "Roboto", sans-serif;
     color: var(--primary-color);
-    margin: 1.2rem 0;
+    margin: 1.2rem 0 0.5rem;
     font-size: 1.2rem;
 }
 
-
-.temple-card p::first-letter {
+.temple-card p {
+    margin: 0.2rem 0;
+}
+.temple-cards-content p::first-letter {
     font-weight: bold;
     font-size: 1rem;  
 }
@@ -177,6 +189,9 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    place-items: center;
+    max-width: 100000px;
+    margin: 0 auto;
 }
 footer {
     text-align: center;

@@ -2,7 +2,6 @@
     body {
         display: grid;
         grid-template-rows: auto 1fr auto;
-        min-height: 100vh;
     }
     
     .navigation {
@@ -41,7 +40,7 @@
             display: none;
         }
     .temple-cards-container {
-            grid-template-columns: 1fr 1fr 1fr;   
+            grid-template-columns: repeat(3, 1fr);
             padding: 1rem;
         }
 
