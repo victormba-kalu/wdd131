@@ -174,7 +174,7 @@ h2 {
 .temple-cards-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 footer {
     text-align: center;
