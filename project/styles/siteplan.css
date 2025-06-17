@@ -19,7 +19,11 @@ header {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     padding: 10px;
-    justify-content: center;
+    place-content: center;
+}
+
+header img {
+    padding-bottom: 8px;
 }
 
 p {
