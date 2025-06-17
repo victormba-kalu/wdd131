@@ -5,18 +5,19 @@
 }
 
 :root {
-    --primary-color: #F9A8D4;
-    --secondary-color: #A78BFA;
+    --primary-color: #C75B91;
+    --secondary-color: #6A4DBA;
     --accent1-color: #F0F2F5;
     --accent2-color: #1F2937;
 }
 body {
     color: var(--accent2-color);
-    font-family: "inter", sans-serif;
+    font-family: "inter", sans-serif; 
 }
 header {
     display: flex;
     background-color: var(--secondary-color);
+    color: var(--accent1-color);
     padding: 10px;
     justify-content: center;
 }
@@ -40,7 +41,7 @@ section {
 }
 
 section p {
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .label {
@@ -48,25 +49,46 @@ section p {
 }
 
 footer {
-    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 10px;
     text-align: center;
-    font-weight: bold;
+    
 }
 
 a {
-    color: var(--accent2-color);
     text-decoration: none;
     font-weight: bold;
-    background-color: var(--accent1-color);
     transition: color 0.3s ease;
     display: block;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
+    text-align: center;
+    margin: 1.2rem 0;
+    
+}
+.wireframe-1 {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: 1px solid var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
-a:hover {
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
+.wireframe-2 {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border: 1px solid var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0.5);
+}
+
+.wireframe-1:hover {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+.wireframe-2:hover {
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
