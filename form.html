@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="A simple form for user input, designed for the WDD131 project.">
+    <meta name="author" content="Victor Mba">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <fieldset>
+                <legend>Product Name</legend>
+                <select id="product" name="my-product" required>
+                    <option value="" disabled selected>Select a Product</option>
+                    
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>overall Rating</legend>
+                <label for="onestar">&star;</label>
+                <input type="radio" id="onestar" name="my-option" required>
+                
+                <label for="twostar">&star; &star;</label>
+                <input type="radio" id="twostar" name="my-option" required>
+                
+                <label for="threestar">&star; &star; &star;</label>
+                <input type="radio" id="threestar" name="my-option" required> 
+                
+                <label for="fourstar">&star; &star; &star; &star;</label>
+                <input type="radio" id="fourstar" name="my-option" required>
+                
+                <label for="fivestar">&star; &star; &star; &star; &star;</label>
+                <input type="radio" id="fivestar" name="my-option" required>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="date" name="my-date" required>
+                
+            </fieldset>
+
+            <legend>Which features did you find useful in the product? <br>
+                <span class="features">(Check all that apply)</span>
+            </legend>
+            <input type="checkbox" id="feature1" name="my-feature" value="Feature 1">
+            <label for="feature1">Durability</label>
+
+            <input type="checkbox" id="feature2" name="my-feature" value="Feature 2">
+            <label for="feature2">Ease of Use</label>
+
+            <input type="checkbox" id="feature3" name="my-feature" value="Feature 3">
+            <label for="feature3">Performance</label>
+
+            <input type="checkbox" id="feature4" name="my-feature" value="Feature 4">
+            <label for="feature4">Design</label>
+
+            <label for="review">Written Review</label>
+            <textarea name="user_review" id="review"></textarea>
+
+            
+
+
+
+
+
+
+
+        </form>
+
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
