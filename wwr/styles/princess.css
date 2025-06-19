@@ -283,3 +283,22 @@ label {
 .form-item {
     display: grid;
     align-items: center;}
+
+.column1 {
+    grid-template-columns: 1fr 2fr;
+    
+  }
+
+.column2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+.column3 {
+    grid-template-columns: 9fr 1fr;
+  }
+
+.column5 {
+    justify-self: center;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
