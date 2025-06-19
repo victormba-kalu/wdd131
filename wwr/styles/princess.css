@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     --primary-color: #C75B91;
     --secondary-color: #6A4DBA;
@@ -116,7 +115,7 @@ nav a {
     display: block;
     color: var(--accent1-color);
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -213,3 +212,30 @@ footer {
     background-color: var(--secondary-color);
 }
 
+/*  About Section   */
+
+.main-headline {
+    text-align: center;
+}
+.main-headline p {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin: 2rem;
+}
+
+.main-headline h2 {
+    font-size: 3rem;
+    color: var(--accent2-color);  
+    margin-top: var(--gap);
+    
+}
+
+.about-us-container h2 {
+    margin-bottom: var(--gap);
+}
+.about-us-container section {
+    margin: 3rem;   
+    padding: var(--gap);
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}

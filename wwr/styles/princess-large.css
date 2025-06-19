@@ -1,3 +1,45 @@
 @media screen and (min-width: 500px) {
+        
+    :root {
+    --primary-color: #C75B91;
+    --secondary-color: #6A4DBA;
+    --accent1-color: #F0F2F5;
+    --accent2-color: #1F2937;
+    --gap: 1rem;
+}    
+        
+        .navigation {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
     
+        }
+    
+        .navigation li {
+            margin: 0 2rem;
+            display: block;
+    
+        }
+    
+        header nav {
+            order: 0;
+            width: auto;
+        }
+        nav a {
+            text-decoration: none;
+            display: block;
+            color: var(--accent1-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+    
+        nav a:hover {
+            color: var(--accent2-color);
+            background-color: var(--primary-color);
+            border-radius: 3px;
+            transform: translateY(-1.5px);
+        }
+    #menu {
+            display: none;
+        }
 }
