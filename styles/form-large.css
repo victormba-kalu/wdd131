@@ -1,0 +1,12 @@
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        width: 100%;
+        margin: auto;
+    }
+    body {
+        font-size: 20px;
+    }
+
+}

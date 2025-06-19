@@ -3,85 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Product Review</title>
     <meta name="description" content="A simple form for user input, designed for the WDD131 project.">
     <meta name="author" content="Victor Mba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
-
+        <h1>Product Review</h1>
     </header>
 
     <main>
         <form method="get" action="review.html">
 
-            <fieldset>
-                <legend>Product Name</legend>
+            <div class="box">
+                <label>Product Name</label>
                 <select id="product" name="my-product" required>
                     <option value="" disabled selected>Select a Product</option>
-                    
+
                 </select>
-            </fieldset>
+            </div>
 
-            <fieldset>
-                <legend>overall Rating</legend>
-                <label for="onestar">&star;</label>
-                <input type="radio" id="onestar" name="my-option" required>
+            <label class="rating">Overall Rating</label>
+            <div class="box review-container">
+                <div>
+                    <label for="onestar">&star;</label>
+                    <input type="radio" id="onestar" name="my-option" value="1" required>
+                </div>
+                <div>
+                    <label for="twostar">&star; &star;</label>
+                    <input type="radio" id="twostar" name="my-option" value="2" required>
+                </div>
+                <div>
+                    <label for="threestar">&star; &star; &star;</label>
+                    <input type="radio" id="threestar" name="my-option" value="3" required>
+                </div>
                 
-                <label for="twostar">&star; &star;</label>
-                <input type="radio" id="twostar" name="my-option" required>
-                
-                <label for="threestar">&star; &star; &star;</label>
-                <input type="radio" id="threestar" name="my-option" required> 
-                
-                <label for="fourstar">&star; &star; &star; &star;</label>
-                <input type="radio" id="fourstar" name="my-option" required>
-                
-                <label for="fivestar">&star; &star; &star; &star; &star;</label>
-                <input type="radio" id="fivestar" name="my-option" required>
-                
-            </fieldset>
+                <div>
+                    <label for="fourstar">&star; &star; &star; &star;</label>
+                    <input type="radio" id="fourstar" name="my-option" value="4" required>
+                </div>
 
-            <fieldset>
-                <legend>Date of Installation</legend>
-                <input type="date" id="date" name="my-date" required>
-                
-            </fieldset>
+                <div>
+                    <label for="fivestar">&star; &star; &star; &star; &star;</label>
+                    <input type="radio" id="fivestar" name="my-option" value="5" required>
+                </div>
 
-            <legend>Which features did you find useful in the product? <br>
-                <span class="features">(Check all that apply)</span>
-            </legend>
-            <input type="checkbox" id="feature1" name="my-feature" value="Feature 1">
-            <label for="feature1">Durability</label>
+            </div>
 
-            <input type="checkbox" id="feature2" name="my-feature" value="Feature 2">
-            <label for="feature2">Ease of Use</label>
+            <div class="box">
+                <label>Date of Installation
+                <input type="date" id="date" name="my-date" required></label>
 
-            <input type="checkbox" id="feature3" name="my-feature" value="Feature 3">
-            <label for="feature3">Performance</label>
+            </div>
+            <div class="box">
+                <label>Which features did you find useful in the product? <br>
+                    <span class="features">(Check all that apply)</span>
+                </label>
+                <label for="feature1"><input type="checkbox" id="feature1" name="my-feature" value="Durability">
+                Durability</label>
 
-            <input type="checkbox" id="feature4" name="my-feature" value="Feature 4">
-            <label for="feature4">Design</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="my-feature" value="Ease of Use">
+                Ease of Use</label>
 
-            <label for="review">Written Review</label>
-            <textarea name="user_review" id="review"></textarea>
+                <label for="feature3"><input type="checkbox" id="feature3" name="my-feature" value="Performance">
+                Performance</label>
 
-            
+                <label for="feature4"><input type="checkbox" id="feature4" name="my-feature" value="Design">
+                Design</label>
+            </div>
 
+            <div class="box">
+                <label for="review">Written Review <span class="review">(optional)</span></label>
+                <textarea name="user_review" id="review"></textarea>
+            </div>
 
+            <div class="box">
+                <label for="user_name">Your Name <span class="your-name">(optional)</span>
+                <input type="text" id="user_name" name="user_name"></label>
+            </div>
 
-
-
+            <input type="submit" value="Post Review" class="submit-button">
 
 
         </form>
 
     </main>
-    
-    <footer>
 
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127796; Product Review Form | Victor Mba &#127796; Rivers, Nigeria</p>
+        <p class="modified-last">Last Modification: <span id="lastmodified"></span></p>
     </footer>
 </body>
 </html>
