@@ -150,6 +150,11 @@ picture img {
 .intro-headline h2 {
     font-size: 2rem;
     margin-bottom: .75rem;
+    line-height: 1.5rem; 
+}
+
+.intro-headline p {
+    font-size: 1.3rem;
 }
 
 .service-container h2 {
@@ -231,7 +236,7 @@ footer {
     
 }
 
-.about-us-container h2 {
+.about-us-container h3 {
     margin-bottom: var(--gap);
 }
 .about-us-container section {
