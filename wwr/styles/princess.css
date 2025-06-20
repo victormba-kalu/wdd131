@@ -64,7 +64,7 @@ header nav {
     color: var(--accent2-color);
     border-radius: 3px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 
 }
 
@@ -95,7 +95,7 @@ header nav {
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
@@ -159,6 +159,7 @@ picture img {
 .service-container p {
     padding: 0.15rem;
     line-height: 2rem;
+    text-align: justify;
 }
 
 .service-card-1 ul {
