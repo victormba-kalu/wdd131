@@ -248,6 +248,7 @@ footer {
 
 /* Form Section */
 form {
+    width: 90%;
     max-width: 650px;
     margin: 1rem auto;
     padding: 1rem;
@@ -339,7 +340,8 @@ label input[type="checkbox"] {
     transition: background-color 0.3s ease, transform 0.1s ease;
     display: block;
     cursor: pointer;
-    margin-left: 2rem;
+    
+    
 }
 
 input[type="checkbox"] {

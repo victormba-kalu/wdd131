@@ -6,7 +6,7 @@
     --accent1-color: #F0F2F5;
     --accent2-color: #1F2937;
     --gap: 1rem;
-}    
+        }    
         
         .navigation {
             list-style-type: none;
@@ -42,4 +42,8 @@
     #menu {
             display: none;
         }
+    .submit-button{
+        margin-left: 2rem;
+
+    }
 }
